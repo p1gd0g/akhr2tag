@@ -1,12 +1,13 @@
 package main
 
 import (
-	"akhr2tag/web"
 	"encoding/json"
 	"fmt"
-	"log"
+	"io/ioutil"
+	"os"
 
 	"github.com/maxence-charriere/go-app/v6/pkg/app"
+	"github.com/maxence-charriere/go-app/v6/pkg/log"
 )
 
 type briefInfo struct {
@@ -23,7 +24,6 @@ var (
 )
 
 func init() {
-	log.SetFlags(log.Lshortfile)
 
 	akhr = &hello{}
 
@@ -49,7 +49,19 @@ func init() {
 
 	var m interface{}
 
-	json.Unmarshal([]byte(web.AkhrJSON), &m)
+	jsonFile, err := os.Open("./akhr.json")
+	if err != nil {
+		log.Error(err.Error())
+		return
+	}
+
+	jsonBytes, err := ioutil.ReadAll(jsonFile)
+	if err != nil {
+		log.Error(err.Error())
+		return
+	}
+
+	json.Unmarshal(jsonBytes, &m)
 
 	nonTagMap["近战位"] = struct{}{}
 	nonTagMap["远程位"] = struct{}{}
