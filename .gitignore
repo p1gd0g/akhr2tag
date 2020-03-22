@@ -1,1 +1,2 @@
-/server/main.go
+server/main.go
+*.wasm
