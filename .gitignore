@@ -2,3 +2,4 @@ server/main.go
 *.wasm
 *.pem
 *.crt
+main

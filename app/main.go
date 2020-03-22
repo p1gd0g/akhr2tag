@@ -49,7 +49,7 @@ func init() {
 
 	var m interface{}
 
-	jsonFile, err := http.Get("https://127.0.0.1:8888/web/akhr.json")
+	jsonFile, err := http.Get("https://raw.githubusercontent.com/graueneko/aktools/master/src/assets/data/akhr.json")
 	if err != nil {
 		log.Error(err.Error())
 		return
