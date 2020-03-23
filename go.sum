@@ -1,6 +1,7 @@
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/maxence-charriere/go-app v1.3.6 h1:ivoXYI+Wf11vrmgoew5hcFDw4djFin2HzwBGjs8yV+4=
+github.com/maxence-charriere/go-app v6.0.0+incompatible h1:a2ZgPacIoYZ9iEIHEdRbtNo5o4lSHV57pTMIW9e022w=
 github.com/maxence-charriere/go-app/v6 v6.1.0 h1:HSVwoWey+R5z8Ky9opDNZbCXgCDxvoigNyY8VhWKHMw=
 github.com/maxence-charriere/go-app/v6 v6.1.0/go.mod h1:lndc83s6AlsH9LmLR5JsttRzSwUVqOOYi3e/Kd5FfTU=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
